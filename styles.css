@@ -1,24 +1,39 @@
 body {
   margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
-  background: linear-gradient(135deg, #0f172a, #020617);
+  font-family: 'Phantom Sans', 'Inter', Arial, sans-serif;
+  background: #17171d;
   color: white;
+}
+
+a {
+  color: #5bc0de;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 30px;
-  background: rgba(30,41,59,0.7);
-  backdrop-filter: blur(10px);
+  background: #252429;
   position: sticky;
   top: 0;
+  z-index: 100;
+}
+
+.nav h2 {
+  color: #ec3750;
+  margin: 0;
 }
 
 .nav a {
-  color: white;
+  color: #8492a6;
   margin-left: 20px;
   text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: white;
 }
 
 .hero {
@@ -26,14 +41,31 @@ body {
   padding: 100px 20px;
 }
 
+.hero h1 {
+  color: white;
+}
+
+.hero p {
+  color: #8492a6;
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 10px auto 0;
+}
+
 .btn {
   display: inline-block;
   padding: 14px 30px;
-  background: linear-gradient(45deg, orange, red);
+  background: #ec3750;
   color: white;
   border-radius: 8px;
   text-decoration: none;
-  margin-top: 20px;
+  margin: 20px 8px 0;
+  transition: padding 0.2s, background 0.2s;
+}
+
+.btn:hover {
+  padding: 16px 34px;
+  background: #d62f45;
 }
 
 .center {
@@ -46,8 +78,17 @@ body {
   padding: 20px;
 }
 
+.container a {
+  color: #338eda;
+}
+
 .list li {
   margin: 10px 0;
+  color: #8492a6;
+}
+
+.list li strong {
+  color: white;
 }
 
 .grid {
@@ -58,11 +99,17 @@ body {
 }
 
 .card, .tile {
-  background: rgba(30,41,59,0.6);
+  background: #252429;
+  border: 1px solid #3c3b42;
   border-radius: 15px;
   overflow: hidden;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+  transition: padding 0.2s, margin 0.2s;
+}
+
+.tile {
+  padding: 0;
 }
 
 .tile iframe {
@@ -76,12 +123,30 @@ body {
 }
 
 .card:hover, .tile:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-top: -4px;
+  margin-bottom: -4px;
+  border-color: #ec3750;
+}
+
+.tile:hover {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .tile p {
   padding: 10px;
+  color: #8492a6;
+}
+
+.tile {
+  color: white;
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: white;
 }
 
 @media (max-width: 600px) {
