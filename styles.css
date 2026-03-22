@@ -146,6 +146,10 @@ a {
   transition: padding 0.2s, margin 0.2s;
 }
 
+.card, .img {
+  padding: 20px;
+}
+
 .tile {
   padding: 0;
 }
@@ -183,8 +187,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: white;
+  text-align: center;
 }
 
 footer {
